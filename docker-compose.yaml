@@ -1,0 +1,12 @@
+---
+version: "3" 
+services: 
+    app-keyboard:
+        container_name: app-example
+        image: oaklabs/app-keyboard:latest 
+        network_mode: host
+volumes:
+    - /tmp/.X11-unix:/tmp/.X11-unix
+    - /dev/shm:/dev/shm
+environment:
+    - DISPLAY=:0 
