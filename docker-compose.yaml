@@ -13,10 +13,9 @@ services:
       - "$HOME/.Xauthority:/root/.Xauthority:rw"
       - /tmp/.X11-unix:/tmp/.X11-unix:rw
       - /dev/shm:/dev/shm
-      - ./src:/app/src
       - /dev/input:/dev/input
     environment:
       - NODE_ENV=production
-      - DISPLAY
+      - DISPLAY=unix:0.0
       
       
