@@ -21,16 +21,14 @@ docker-compose down
 
 ```json
 {
-	"services": [
-
-		{
-			"image": "oaklabs/app-keyboard-python:latest",
-			"environment": {
-                "NODE_ENV": "production",
-                "DISPLAY": "unix:0.0"
-            }
-			
-		}
-	]
+  "services": [
+    {
+      "image": "oaklabs/app-keyboard-python:latest",
+      "environment": {
+        "NODE_ENV": "production",
+        "DISPLAY": "unix:0.0"
+      }
+    }
+  ]
 }
 ```
