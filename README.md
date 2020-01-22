@@ -16,3 +16,21 @@ docker-compose up --build
 ```bash
 docker-compose down
 ```
+
+## Installing on OakOS
+
+```json
+{
+	"services": [
+
+		{
+			"image": "oaklabs/app-keyboard-python:latest",
+			"environment": {
+                "NODE_ENV": "production",
+                "DISPLAY": "unix:0.0"
+            }
+			
+		}
+	]
+}
+```
